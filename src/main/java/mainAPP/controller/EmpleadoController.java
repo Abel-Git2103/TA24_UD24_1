@@ -32,6 +32,11 @@ public class EmpleadoController {
 	    return empleadoServiceImpl.listarEmpleadoNombre(nombre);
 	}
 	
+	//listar Empleado por campo trabajo
+	@GetMapping("/empleados/trabajo/{trabajo}")
+	public List<Empleado> listarEmpleadoTrabajo(@PathVariable(name="trabajo") String trabajo) {
+	    return empleadoServiceImpl.listarEmpleadoTrabajo(trabajo);
+	}	
 	
 	@PostMapping("/empleados")
 	public Empleado salvarEmpleado(@RequestBody Empleado empleado) {

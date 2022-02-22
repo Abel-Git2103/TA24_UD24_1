@@ -48,4 +48,11 @@ public class EmpleadoServiceImpl implements IEmpleadoService {
 		
 		return iEmpleadoDao.findByNombre(nombre);
 	}
+	
+	@Override
+	public List<Empleado> listarEmpleadoTrabajo(String trabajo){
+		
+		return iEmpleadoDao.findByTrabajo(trabajo);
+	}
+	
 }

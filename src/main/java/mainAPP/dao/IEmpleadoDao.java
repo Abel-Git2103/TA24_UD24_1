@@ -7,4 +7,6 @@ import mainAPP.dto.Empleado;
 public interface IEmpleadoDao extends JpaRepository<Empleado, Long> {
 	
 	public List<Empleado> findByNombre(String nombre);
+	
+	public List<Empleado> findByTrabajo(String trabajo);
 }

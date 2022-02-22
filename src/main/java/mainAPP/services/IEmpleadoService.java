@@ -13,6 +13,8 @@ public interface IEmpleadoService {
 	
 	public List<Empleado> listarEmpleadoNombre(String nombre);//Listar Empleados por campo nombre
 	
+	public List<Empleado> listarEmpleadoTrabajo(String trabajo); //Listar Empleados por trabajo
+	
 	public Empleado actualizarEmpleado(Empleado empleado); //Actualiza datos del empleado UPDATE
 	
 	public void eliminarEmpleado(Long id);// Elimina el empleado DELETE
