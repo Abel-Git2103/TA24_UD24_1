@@ -80,7 +80,7 @@ public class EmpleadoController {
 	}
 	
 	@DeleteMapping("/empleados/{id}")
-	public void eleiminarEmpleado(@PathVariable(name="id")Long id) {
+	public void eliminarEmpleado(@PathVariable(name="id")Long id) {
 		empleadoServiceImpl.eliminarEmpleado(id);
 	}
 	
